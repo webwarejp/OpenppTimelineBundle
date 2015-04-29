@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="openpp.timeline.twig.extension.intl" class="Twig_Extensions_Extension_Intl">
+            <tag name="twig.extension" />
+        </service>
+
+        <service id="openpp.timeline.spread" class="Openpp\TimelineBundle\Spread\Spread">
+            <tag name="spy_timeline.spread" />
+        </service>
+
+    </services>
+</container>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<routes xmlns="http://symfony.com/schema/routing"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <route id="openpp_timeline_get" pattern="/timeline/{id}/{page}">
+        <default key="_controller">OpenppTimelineBundle:Default:timeline</default>
+        <default key="id">null</default>
+        <default key="page">1</default>
+        <requirement key="id">\d+</requirement>
+        <requirement key="page">\d+</requirement>
+        <option key="expose">true</option>
+    </route>
+
+</routes>

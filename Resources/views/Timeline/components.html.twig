@@ -1,0 +1,4 @@
+{% block _application_sonata_userbundle_entity_user_default_component %}
+    {# Link to the user's profile #}
+    <a href="{{ path('toppage', {'id' : value.id}) }}">{{ value.username }}</a>
+{% endblock _application_sonata_userbundle_entity_user_default_component %}

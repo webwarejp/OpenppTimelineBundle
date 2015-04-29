@@ -1,0 +1,16 @@
+<div class="row-fluid">
+    <div class="user {{ user.username }}">
+        <p class="ident">{{ user.username }}'s timeline</p>
+    </div>
+    <div class="timeline" id="timeline" data-page="1" data-id="{{ user.id }}" data-last-page="{{ timeline.lastPage }}">
+    {% for action in timeline %}
+        <div class="timeline-entry">
+            <div class="timeline-time">{{ action.createdAt|localizeddate('medium', 'short', null) }}</div>
+            {{ timeline_render(action) }}
+        </div>
+    {% else %}
+        <p>There is no action</p>
+    {% endfor %}
+        <div id="loadimg"></div>
+    </div>
+</div>

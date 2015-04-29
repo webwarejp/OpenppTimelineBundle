@@ -1,0 +1,23 @@
+{
+    "name": "openpp/timeline-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony OpenppTimelineBundle",
+    "keywords": ["timeline", "openpp"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "webware,Inc."
+        }
+    ],
+    "require": {
+        "symfony/symfony": "~2.3",
+
+        "sonata-project/easy-extends-bundle": "~2.1",
+        "friendsofsymfony/jsrouting-bundle": "~1.5",
+
+        "stephpy/timeline-bundle": "dev-master"
+    },
+    "autoload": {
+        "psr-4": { "Openpp\\TimelineBundle\\": "" }
+    }
+}
